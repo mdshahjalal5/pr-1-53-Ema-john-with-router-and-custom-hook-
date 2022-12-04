@@ -1,9 +1,10 @@
 
 import React from 'react';
-const Inventory = () => {
+const Inventory = ({student:checking}) => {
+
     return (
         <div>
-            <h2>This is inventory</h2>
+            <h2>This is inventory. {checking.name}</h2>
         </div>
     );
 };
