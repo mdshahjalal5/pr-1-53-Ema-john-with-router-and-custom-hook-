@@ -1,8 +1,8 @@
 import React from 'react';
 import './ReviewItem.css'
-// import { TrashIcon} from '@heroicons/react/24/solid'
+import { TrashIcon} from '@heroicons/react/24/solid'
 import { element, heroIcon } from '../../FontAwesom/FontAwesom';
-const ReviewItem = ({product}) => {
+const ReviewItem = ({product, handleDelete}) => {
     // console.log(product);
     const {name, price, shipping, img, quantity} = product;
     return (
@@ -11,6 +11,8 @@ const ReviewItem = ({product}) => {
             <div className="">
                 <img src={img} alt="" />
             </div>
+            <div className="info-container">
+                
             <div className="info">
                 <h2>{name} </h2>
                 <p>Price: <strong>{price} </strong> </p>
@@ -19,10 +21,9 @@ const ReviewItem = ({product}) => {
                 <p>{element} pr</p>
             </div>
            
-            {/* <TrashIcon className='icon'></TrashIcon> */}
-            <div className="icon">
-                {heroIcon}
+            <TrashIcon onClick={()=>handleDelete(product.id)} className='icon'></TrashIcon>
             </div>
+          
                 
             
         </div>
