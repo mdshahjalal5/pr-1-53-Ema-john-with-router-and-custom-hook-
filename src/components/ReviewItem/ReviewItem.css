@@ -1,0 +1,31 @@
+/* *{margin: 0;
+padding: 0;
+box-sizing: border-box;
+} */
+.cart-product {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid grey;
+    margin: 10px;
+    box-shadow: 4px 4px 8px grey;
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+}
+.cart-product p{
+    margin: 0;
+}
+
+.cart-product img{
+    width: 120px;
+}
+.icon{
+    height: 40px;
+    width: auto;
+    /* padding: 10px; */
+    color: black;
+    border: 1px solid red;
+    border-radius: 50%;
+    background: pink;
+}
